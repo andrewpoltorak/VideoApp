@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  videoapp:
+    image: ${DOCKER_REGISTRY-}videoapp
+    build:
+      context: .\NewBeaver
+      dockerfile: Dockerfile
